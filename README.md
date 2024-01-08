@@ -1,4 +1,4 @@
-# TWRP Device configuration for Samsung Galaxy M23/F23 SM-M236B/SM-E236B (m23xq)
+# TWRP Device configuration for Samsung Galaxy M23/F23 SM-M236B/SM-E236B (codename m23xq)
 
 ## Device specifications
 Basic    | Spec Sheet
@@ -18,9 +18,9 @@ Display  | LCD, 120Hz, 525 nits, 6.6 inch, 1080 x 2408 pixels, 20:9 ratio
 ## Kernel Source
 From Stock ROM
 ```
-m23xqxx-user 13 TP1A.220624.014 M236BXXU4CWF3 release-keys
+m23xqxx-user 14 UP1A.231005.007 M236BXXU5DWL1 release-keys
 ```
-## How to compile
+## How to compile locally:
 First repo init the twrp-12.1 tree:
 
 ```
@@ -37,7 +37,7 @@ Then add to a local manifest (if you don't have .repo/local_manifest then make t
 <manifest>
   <remote name="me" 
         fetch="https://github.com/ZorEl212" />
-  <project name="android_device_samsung_m23xq" path="device/samsung/m23xq" remote="me" revision="final"/>
+  <project name="android_device_samsung_m23xq" path="device/samsung/m23xq" remote="me" revision="android-12.1"/>
 </manifest>
 ```
 Now you can sync your source:

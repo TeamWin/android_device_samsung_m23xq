@@ -28,6 +28,9 @@
 import /init.recovery.qcom_decrypt.rc
 import /init.recovery.display.rc
 
+on early-init
+    start linkblobs
+
 on init
     write /sys/class/backlight/panel0-backlight/brightness 200
     setprop prepdecrypt.setpatch true
@@ -40,8 +43,6 @@ on fs
     # Mount firmware
     mkdir /vendor/firmware_mnt
     mount vfat /dev/block/bootdevice/by-name/apnhlos /vendor/firmware_mnt ro
-
-    start linkblobs
 
 on boot
     start health-hal-2-1
