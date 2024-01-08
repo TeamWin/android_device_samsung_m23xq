@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "17b4a02d_a140adbe",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1162
+      },
+      "writtenOn": "2024-01-08T02:26:48Z",
+      "side": 1,
+      "message": "Tested with a local build, decryption is working well",
+      "revId": "7d3414e4f586781bc6ca7246f40da18256be6667",
+      "serverId": "9c1c7d72-6534-4d44-b0ea-39f63e804833"
+    }
+  ]
+}
